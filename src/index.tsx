@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import ContextSample from './components/ContextSample';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Hello from './components/Hello';
-import ContainerSample from './components/ContainerSample';
+// import ContainerSample from './components/ContainerSample';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <ContainerSample />
+    {/* <ContainerSample /> */}
+    <ContextSample />
   </React.StrictMode>
 );
 
