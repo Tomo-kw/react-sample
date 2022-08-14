@@ -1,5 +1,14 @@
+import React from 'react'
+
+// 型定義
+type ContainerProps = {
+    title: string
+    children: React.ReactNode
+}
+
 // Containerは赤背景のボックスの中にタイトルと子要素を表示する
-const Container = (props: { title: string; children: React.ReactElement }) => {
+// 戻り値の型つけJSX.Element
+const Container = (props: ContainerProps): JSX.Element => {
     const { title, children } = props
 
     return (
@@ -11,7 +20,7 @@ const Container = (props: { title: string; children: React.ReactElement }) => {
     )
 }
 
-const Parent = () => {
+const Parent = (): JSX.Element => {
     return (
         // Containerを使用する際に、他の要素を囲って使用ｓうる
         <Container title="Hello">
