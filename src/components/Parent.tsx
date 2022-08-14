@@ -1,4 +1,4 @@
-import React, { memo, useState, useCallback } from "react"
+import React, { useState, useCallback } from "react"
 
 type ButtonProps = {
     onClick: () => void

@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import Parent from './components/ContainerSample';
-import { Parent } from './components/Parent'
-// import ContextSample from './components/ContextSample';
-// import Counter from './components/Counter';
+import { UseMemoSample } from './components/UseMemoSample';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Hello from './components/Hello';
-// import ContainerSample from './components/ContainerSample';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,9 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <ContainerSample /> */}
-    {/* <Counter initialValue={1}/> */}
-    <Parent />
+    <UseMemoSample />
   </React.StrictMode>
 );
 
