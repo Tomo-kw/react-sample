@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ContextSample from './components/ContextSample';
+// import ContextSample from './components/ContextSample';
+import Counter from './components/Counter';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -14,7 +15,7 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <ContainerSample /> */}
-    <ContextSample />
+    <Counter initialValue={1}/>
   </React.StrictMode>
 );
 
